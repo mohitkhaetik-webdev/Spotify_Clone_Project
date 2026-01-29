@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- xmlns="http://www.w3.org/2000/svg"  -->
+    <!-- xmlns="http://www.w3.org/2000/svg" -->
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="spotify favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
+</head>
+
+<body>
+    <div class="navbar">
+        <img class="logo invert" src="logo.svg" alt="">
+        <div class="homeback"><img class="home invert" src="home.svg" alt="home"></div>
+        <img class="searchsvg" src="search.svg" alt="">
+        <input class="search" type="text" name="Search bar" id="" placeholder="What do you want me to play??">
+        <ul class="functions">
+            <span>Premium</span>
+            <span>Support</span>
+            <span>Download</span>
+        </ul>
+        <div class="sline"></div>
+        <div class="installapp">
+            <img class="installsvg invert" src="install.svg" alt="">
+            Install App
+        </div>
+
+        <div class="signup">Sign up</div>
+        <div class="login">Log in</div>
+    </div>
+
+
+    <div class="container flex">
+        <i id="hamburger" class="hgi hgi-stroke hgi-menu-01"></i>
+        <div class="left-border">
+            <div class="library ">
+                <div class="invert yourlibrary">Your library</div>
+                <i id="cross" class="hgi hgi-stroke hgi-cancel-02"></i>
+                <div class="plus">+</div>
+
+            </div>
+            <div class="songlist">
+                <ol>
+                </ol>
+
+            </div>
+            <div class="playlist">
+                <div class="first">Create your first playlist</div>
+                <div class="second">It's easy we will help you</div>
+                <div class="center">
+                    <div class="third">Create playlist</div>
+                </div>
+            </div>
+            <div class="browse">
+                <div class="bfirst">Let’s find some podcasts to follow</div>
+                <div class="bsecond">We’ll keep you updated on new episodes</div>
+                <div class="center">
+                    <div class="bthird">Browse podcasts</div>
+                </div>
+            </div>
+
+
+            <div class="footer">
+                <span>Legal</span>
+                <span>Safety and Privacy Center</span>
+                <span>Cookies</span>
+                <span>About Ads</span>
+                <span>Accessibility</span>
+                <span>Privacy Policy</span>
+            </div>
+
+            <div class="Cookies">Cookies</div>
+
+            <button class="lang-btn"><span class="icon">🌐</span>English</button>
+
+        </div>
+        <div style="background-color: #121212;" class="right-border">
+            <iframe hidden  id="spotifyPlayer" style="border-radius:12px" width="100%" height="80" frameborder="0"
+                allow="encrypted-media">
+            </iframe>
+
+            <div class="spotifyplaylist">
+                <h1>Spotify playlist</h1>
+                <div class="cardcontainer">
+                    <div class="card border">
+                        <img src="https://i.scdn.co/image/ab67656300005f1f6d4e0809f9f650728ee6d0e9" alt="">
+                        <div class="greenplayspotify"
+                            data-spotify="https://open.spotify.com/embed/episode/2xKjdOoBlb1bEYh1yvnmGp">
+                            <img class="greenplay" style="width: 37px;" src="greenplayspotify.svg" alt="">
+                        </div>
+                        <div>Raj Shamani's Figuring Out</div>
+                        <p>Raj Shamani</p>
+
+                    </div>
+
+                    <div class="card border ">
+                        <img src="https://i.scdn.co/image/ab67656300005f1ffdc71e637d555daac8d1ca89" alt="">
+                        <div class="greenplayspotify"
+                            data-noiframe="true">
+                            <img class="greenplay" style="width: 37px;" src="greenplayspotify.svg" alt="">
+                        </div>
+                        <div class="secondcard">The Horror Show by Khooni Monday - Scary Stories in Hindi</div>
+                        <p>Divay Agarwal</p>
+                    </div>
+
+                    <div class="card border">
+                        <img src="https://i.scdn.co/image/ab67616d00001e020c8806717b030da10e9fd336" alt="">
+                        <div class="greenplayspotify" data-noiframe="true" data-song="/songsforcard/Dhanda Nyoliwala - Not Guilty (Official Music Video) - Dhanda Nyoliwala.mp3">
+                            <img class="greenplay" style="width: 37px;" src="greenplayspotify.svg" alt="">
+                        </div>
+                        <div>Not Guilty</div>
+                        <p class="card-sub-text ">Latest Release • Single</p>
+                    </div>
+                    <div class="card border">
+                        <img src="https://i.scdn.co/image/ab67656300005f1f36dbb0b2d65004488fcc322f" alt="">
+                        <div class="greenplayspotify">
+                            <img class="greenplay" style="width: 37px;" src="greenplayspotify.svg" alt="">
+                        </div>
+                        <div>The Stories of Mahabharata</div>
+                        <p>Sudipta Bhamik</p>
+                    </div>
+                    <div class="card border ">
+                        <img src="https://i.scdn.co/image/ab67616d00001e0254e544672baa16145d67612b" alt="">
+                        <div class="greenplayspotify" data-spotify="https://open.spotify.com/embed/album/3RZxrS2dDZlbsYtMRM89v8">
+                            <img class="greenplay" style="width: 37px;" src="greenplayspotify.svg" alt="">
+                        </div>
+                        <div>Rockstar</div>
+                        <p class="card-sub-text ">2011</p>
+                    </div>
+
+                    <div class="card border" >
+                        <img src="https://i.scdn.co/image/ab67616d00001e0251a2d6606fd0aa9c719e439d" alt="">
+                        <div>Chikiri Chikiri (From "Peddi") [TAMIL]</div>
+                        <div class="greenplayspotify" data-spotify="https://open.spotify.com/embed/album/7zunv8WXduUeTAUPodLJEI">
+                            <img class="greenplay" style="width: 37px;" src="greenplayspotify.svg" alt="">
+                        </div>
+                        <p>Single • 2025
+                            • 1Song</p>
+                    </div>
+
+                    <div class="card border">
+                        <img src="https://i.scdn.co/image/ab67616d00001e020c556f210b927ca230f32241" alt="">
+                        <div class="greenplayspotify" data-spotify="https://open.spotify.com/embed/track/5OMUXgfXsSukZ0zxelpC3b">
+                            <img class="greenplay" style="width: 37px;" src="greenplayspotify.svg" alt="">
+                        </div>
+                        <div class="secondcard">Raanjhanaa (Original Motion Picture Soundtrack)</div>
+                        <p>2013</p>
+                    </div>
+                    <div class="card border">
+                        <img src="	https://i.scdn.co/image/ab67616d00001e0272506a30562323b5823965f2" alt="">
+                        <div class="greenplayspotify" data-noiframe="true" data-song="/songsforcard/One In A Million  Jordan Sandhu (Official Video)  Avvy Sra  Latest Punjabi Song 2025 - Speed Records.mp3">
+                            <img class="greenplay" style="width: 37px;" src="greenplayspotify.svg" alt="">
+                        </div>
+                        <div>One In A Million</div>
+                        <p>2025 • Jordan Sandhu,AvvySra,Kaptaan </p>
+                    </div>
+                    <div class="card border">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02cf9866d286f21348ebdfd2ec" alt="">
+                        <div class="greenplayspotify" data-spotify="https://open.spotify.com/embed/album/3U6JvK5ij3bbhBmdotoNJ1">
+                            <img class="greenplay" style="width: 37px;" src="greenplayspotify.svg" alt="">
+                        </div>
+                        <div>Tere Ishk Mein (From "Tere Ishk Mein")</div>
+                        <p>2025</p>
+                    </div>
+                    <div class="card border">
+                        <img src="https://i.scdn.co/image/ab67656300005f1f271a616652b510265e8fc156" alt="">
+                        <div class="greenplayspotify" data-spotify="https://open.spotify.com/embed/episode/3Oi5BqQtPsBo2QB9qbhk6U">
+                            <img class="greenplay" style="width: 37px;" src="greenplayspotify.svg" alt="">
+                        </div>
+                        <div class="secondcard">People with The Prime Minister Shri Narendra Modi x Nikhil Kamath | Ep.
+                            6</div>
+                        <p>10Jan•127min</p>
+                    </div>
+                </div>
+                <div class="Playbar">
+
+                    <div class="songinfo"></div>
+                    <div class="seekparent">
+                        <div class="seekbar">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                    <div class="songbuttons">
+                        <i id="previous" class="hgi hgi-stroke hgi-previous"></i>
+                        <i id="play" class="hgi hgi-stroke hgi-play"></i>
+                        <i id="next" class="hgi hgi-stroke hgi-next"></i>
+                        <div class="volume">
+                            <i id="speaker" class="hgi hgi-stroke hgi-volume-high"></i>
+                            <div class="vseekbar">
+                                <div class="vseekcircle"></div>
+                            </div>
+                        </div>
+                        <div class="songtime"></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+
+</html>
